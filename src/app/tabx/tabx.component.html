@@ -1,0 +1,57 @@
+<!--form [formGroup]="myForm"-->
+<div class="tabset">
+  <!-- Tab 1 -->
+  <input type="radio" name="tabset" id="tab1" aria-controls="yks" checked>
+  <label for="tab1">Üldinfo</label>
+  <!-- Tab 2 -->
+  <input type="radio" name="tabset" id="tab2" aria-controls="kaks">
+  <label for="tab2">Hetkeolukord</label>
+
+  <input type="radio" name="tabset" id="tab3" aria-controls="kolm">
+  <label for="tab3">Prognoos</label>
+
+  <input type="radio" name="tabset" id="tab4" aria-controls="neli">
+  <label for="tab4">Kuidas tulemusi mõista?</label>
+
+  <div class="tab-panels">
+    <section id="yks" class="tab-panel">
+      <div class="raam">
+        <yld1-component></yld1-component>
+        <br>
+        <br>
+        <br>
+        <yld2-component></yld2-component>
+        <br>
+        <yld3-component></yld3-component>
+        <!--p>Esimene</p-->
+        <!--koondind7-component></koondind7-component-->
+        <!--input type ="text" placeholder="Enter Amount" formControlName="buyInAmount" /-->
+      </div>
+    </section>
+    <section id="kaks" class="tab-panel">
+      <div class= "raam">
+        <yld3-component></yld3-component>
+        <p>Teine</p>
+        <koondind7-component></koondind7-component>
+        <!--input type ="text" placeholder="Types In Grams" formControlName="buyInGrams" /-->
+      </div>
+    </section>
+    <section id="kolm" class="tab-panel">
+      <div class="raam">
+        <p>Kolmas</p>
+        <koondind7-component></koondind7-component>
+        <!--input type ="text" placeholder="Types In Grams" formControlName="buyInGrams" /-->
+      </div>
+    </section>
+    <section id="neli" class="tab-panel">
+      <div class="raam">
+        <p>Neljas</p>
+        <!--koondind7-component></koondind7-component-->
+        <!--input type ="text" placeholder="Types In Grams" formControlName="buyInGrams" /-->
+      </div>
+    </section>
+
+  </div>
+
+</div>
+<!--/form-->
